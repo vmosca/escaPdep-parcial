@@ -1,11 +1,11 @@
 class Maestria {
-  method escapa(unaSala, escapoDeVariasSalas)
+  method puedeEscapar(unaSala, escapoDeVariasSalas)
 }
 
 object amateur inherits Maestria {
-  override method escapa(unaSala, escapoDeVariasSalas) = !unaSala.esUnaSalaDificil() && escapoDeVariasSalas
+  override method puedeEscapar(unaSala, escapoDeVariasSalas) = !unaSala.esUnaSalaDificil() && escapoDeVariasSalas
 }
 
 object profesional inherits Maestria {
-  override method escapa(unaSala, escapoDeVariasSalas) = true
+  override method puedeEscapar(unaSala, escapoDeVariasSalas) = true
 }
